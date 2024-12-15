@@ -82,6 +82,7 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
   /usr/include/c++/14/bits/basic_string.tcc \
   /usr/include/c++/14/bits/char_traits.h \
   /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/chrono.h \
   /usr/include/c++/14/bits/concept_check.h \
   /usr/include/c++/14/bits/cpp_type_traits.h \
   /usr/include/c++/14/bits/cxxabi_forced.h \
@@ -106,6 +107,7 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
   /usr/include/c++/14/bits/new_allocator.h \
   /usr/include/c++/14/bits/ostream.tcc \
   /usr/include/c++/14/bits/ostream_insert.h \
+  /usr/include/c++/14/bits/parse_numbers.h \
   /usr/include/c++/14/bits/postypes.h \
   /usr/include/c++/14/bits/predefined_ops.h \
   /usr/include/c++/14/bits/ptr_traits.h \
@@ -116,6 +118,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
   /usr/include/c++/14/bits/shared_ptr_atomic.h \
   /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/std_mutex.h \
+  /usr/include/c++/14/bits/std_thread.h \
   /usr/include/c++/14/bits/stl_algobase.h \
   /usr/include/c++/14/bits/stl_construct.h \
   /usr/include/c++/14/bits/stl_function.h \
@@ -129,6 +133,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
   /usr/include/c++/14/bits/streambuf.tcc \
   /usr/include/c++/14/bits/streambuf_iterator.h \
   /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/this_thread_sleep.h \
+  /usr/include/c++/14/bits/unique_lock.h \
   /usr/include/c++/14/bits/unique_ptr.h \
   /usr/include/c++/14/bits/uses_allocator.h \
   /usr/include/c++/14/bits/utility.h \
@@ -137,8 +143,10 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/clocale \
   /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstdint \
   /usr/include/c++/14/cstdio \
   /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/ctime \
   /usr/include/c++/14/cwchar \
   /usr/include/c++/14/cwctype \
   /usr/include/c++/14/debug/assertions.h \
@@ -156,13 +164,17 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
   /usr/include/c++/14/iosfwd \
   /usr/include/c++/14/iostream \
   /usr/include/c++/14/istream \
+  /usr/include/c++/14/limits \
   /usr/include/c++/14/memory \
+  /usr/include/c++/14/mutex \
   /usr/include/c++/14/new \
   /usr/include/c++/14/ostream \
+  /usr/include/c++/14/ratio \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
   /usr/include/c++/14/string \
   /usr/include/c++/14/system_error \
+  /usr/include/c++/14/thread \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -268,17 +280,21 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/c++/14/new:
 
+/usr/include/c++/14/mutex:
+
 /usr/include/c++/14/ext/aligned_buffer.h:
 
 /usr/include/errno.h:
 
 /usr/include/c++/14/debug/debug.h:
 
-/usr/include/c++/14/debug/assertions.h:
-
 /usr/include/c++/14/cwctype:
 
+/usr/include/c++/14/ctime:
+
 /usr/include/c++/14/cstdio:
+
+/usr/include/c++/14/cstdint:
 
 /usr/include/c++/14/cerrno:
 
@@ -288,17 +304,25 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/c++/14/bits/uses_allocator.h:
 
+/usr/include/c++/14/limits:
+
 /usr/include/c++/14/bits/unique_ptr.h:
+
+/usr/include/c++/14/debug/assertions.h:
+
+/usr/include/c++/14/bits/unique_lock.h:
 
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/c++/14/bits/stringfwd.h:
 
+/usr/include/c++/14/bits/stl_uninitialized.h:
+
+/usr/include/c++/14/bits/stl_tempbuf.h:
+
 /usr/include/bits/types/time_t.h:
 
 /usr/include/c++/14/bits/atomic_base.h:
-
-/usr/include/c++/14/bits/stl_uninitialized.h:
 
 /usr/include/c++/14/streambuf:
 
@@ -311,6 +335,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 /usr/include/c++/14/concepts:
 
 /usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/14/ratio:
 
 /usr/include/bits/types/struct_sched_param.h:
 
@@ -335,6 +361,10 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/14/bits/streambuf_iterator.h:
+
+/usr/include/bits/types/__FILE.h:
 
 /usr/include/c++/14/bits/align.h:
 
@@ -362,6 +392,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/bits/endian.h:
 
+/usr/include/c++/14/thread:
+
 /usr/include/asm/errno.h:
 
 /usr/include/stdint.h:
@@ -374,6 +406,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/bits/floatn.h:
 
+/usr/include/c++/14/bits/std_mutex.h:
+
 /home/bogdan/Desktop/tema4paoo/main.cpp:
 
 /usr/include/c++/14/bits/istream.tcc:
@@ -383,10 +417,6 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 /usr/include/features.h:
 
 /usr/include/bits/endianness.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/c++/14/bits/streambuf_iterator.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -454,6 +484,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/bits/pthreadtypes-arch.h:
 
+/usr/include/c++/14/bits/this_thread_sleep.h:
+
 /usr/include/c++/14/bits/invoke.h:
 
 /usr/include/bits/types/__fpos64_t.h:
@@ -467,10 +499,6 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 /usr/include/c++/14/bits/charconv.h:
 
 /usr/include/bits/cpu-set.h:
-
-/usr/include/c++/14/bits/ostream.tcc:
-
-/usr/include/bits/typesizes.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/ctype_inline.h:
 
@@ -542,6 +570,12 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/c++/14/bits/basic_string.h:
 
+/usr/include/c++/14/bits/ostream.tcc:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/c++/14/bits/chrono.h:
+
 /usr/include/c++/14/ostream:
 
 /usr/include/c++/14/clocale:
@@ -580,6 +614,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/c++/14/bits/memoryfwd.h:
 
+/usr/include/c++/14/bits/parse_numbers.h:
+
 /usr/include/c++/14/bits/ostream_insert.h:
 
 /usr/include/c++/14/bits/postypes.h:
@@ -592,6 +628,8 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 
 /usr/include/bits/types/mbstate_t.h:
 
+/usr/include/c++/14/bits/std_thread.h:
+
 /usr/include/c++/14/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/14/bits/std_abs.h:
@@ -603,5 +641,3 @@ CMakeFiles/tema4.dir/main.cpp.o: /home/bogdan/Desktop/tema4paoo/main.cpp \
 /usr/include/c++/14/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/14/bits/stl_tempbuf.h:
