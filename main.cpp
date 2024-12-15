@@ -1,5 +1,7 @@
 #include <iostream>
 #include <memory>
+#include <mutex>
+#include <thread>
 
 class item13{
 public:
@@ -12,8 +14,44 @@ public:
     }
 };
 
-class item14{
+class Mutex14{
+public:
+    void lock(){
+        std::cout << "MUTEX BLOCAT\n";
+        mutexPtr.lock();
+    }
 
+    void unlock(){
+        std::cout << "MUTEX DEBLOCAT\n";
+        mutexPtr.unlock();
+    }
+private:
+    std::mutex mutexPtr;
+};
+
+
+//DELETER CUSTOM
+void unlock14(Mutex14 *m){
+    if(m){
+        m->unlock();
+        std::cout << "MUTEX DEBLOCAT DE DELETER CUSTOM!\n";
+    }
+}
+
+class item14{
+public:
+    item14(Mutex14 *m) : mutexPtr(m, unlock14){
+        //creare si blocare mutex
+        mutexPtr->lock();
+        std::cout << "Mutex blocat!\n";
+    }
+
+    //blocare functionalitati de copiere si mutare
+    item14(const item14& other) = delete;
+    item14(const item14&& other) = delete;
+private:
+    //abordare safe a copierii si stergerii 
+    std::shared_ptr<Mutex14> mutexPtr;
 };
 
 void demoItem13(){
@@ -30,7 +68,13 @@ void demoItem13(){
 }
 
 void demoItem14(){
+    Mutex14 m14;
+    //creare mutex custom
 
+    item14 item14(&m14);
+    //creare si blocare mutex cu shared pointer
+
+    return;
 }
 
 void sep(){
@@ -42,6 +86,6 @@ void sep(){
 int main(){    
     demoItem13();
     sep();
-
+    demoItem14();
     return 0;
 }
